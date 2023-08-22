@@ -47,7 +47,7 @@ public class ObjectHelper {
         }
 
         if(object instanceof Optional) {
-            return  ((Optional<?>) object).isEmpty();
+            return ((Optional<?>) object).isEmpty();
         }
 
         return false;
