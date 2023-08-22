@@ -14,4 +14,4 @@
   * `R` : repository class
 
 
-* Service Layer에 생성된 CRUD 로직은 재정의하여 사용할 수 있습니다.
+* Service Layer에서 사용하는 CRUD 로직은 재정의하여 사용할 수 있습니다.
