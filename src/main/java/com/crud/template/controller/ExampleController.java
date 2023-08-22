@@ -19,8 +19,8 @@ public class ExampleController {
 
     private final ExampleService exampleService;
 
-    private final String EXAMPLE_CONTENT = "example content";
-    private final String UPDATED_EXAMPLE_CONTENT = "updated example";
+    private static final String EXAMPLE_CONTENT = "example content";
+    private static final String UPDATED_EXAMPLE_CONTENT = "updated example";
 
     @RequestMapping(method = RequestMethod.POST, value = "")
     public ResponseEntity<?> createExample() {
