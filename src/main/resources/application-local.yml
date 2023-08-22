@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: on
+      force: on
+
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/dev/h2/base
+    driver-class-name: org.h2.Driver
+    username: sa
+
+  ### JPA 설정 ###
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true # print pretty json
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: TRACE
+      springframework:
+        security: DEBUG
+        web: DEBUG
+        web.filter: DEBUG
+        orm:
+          jpa: DEBUG
