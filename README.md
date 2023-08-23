@@ -11,7 +11,7 @@
 * Generic 관련 정보
   * `Z` : entity class
   * `ID` : primary key type wrapper class
-  * `R` : repository class
+  * `R` : repository
 
 
 * Service Layer에서 사용하는 CRUD 로직은 재정의하여 사용할 수 있습니다.
